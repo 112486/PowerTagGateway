@@ -494,7 +494,7 @@ class PowerTagPartialActiveEnergyDeliveredAndReceived(WirelessDeviceEntity, Sens
 
 class PowerTagPartialReactiveEnergyDelivered(WirelessDeviceEntity, SensorEntity):
     # TODO lobby for Reactive-energy: https://github.com/home-assistant/architecture/discussions/724
-    _attr_device_class = SensorDeviceClass.ENERGY
+    _attr_device_class = None
     _attr_native_unit_of_measurement = "VARh"
     _attr_state_class = SensorStateClass.TOTAL_INCREASING
 
@@ -516,7 +516,7 @@ class PowerTagPartialReactiveEnergyDelivered(WirelessDeviceEntity, SensorEntity)
 
 
 class PowerTagTotalReactiveEnergyDelivered(WirelessDeviceEntity, SensorEntity):
-    _attr_device_class = SensorDeviceClass.ENERGY
+    _attr_device_class = None
     _attr_native_unit_of_measurement = "VARh"
     _attr_state_class = SensorStateClass.TOTAL
 
@@ -536,7 +536,7 @@ class PowerTagTotalReactiveEnergyDelivered(WirelessDeviceEntity, SensorEntity):
 
 
 class PowerTagPartialReactiveEnergyDeliveredPerPhase(WirelessDeviceEntity, SensorEntity):
-    _attr_device_class = SensorDeviceClass.ENERGY
+    _attr_device_class = None
     _attr_native_unit_of_measurement = "VARh"
     _attr_state_class = SensorStateClass.TOTAL_INCREASING
 
@@ -562,7 +562,7 @@ class PowerTagPartialReactiveEnergyDeliveredPerPhase(WirelessDeviceEntity, Senso
 
 
 class PowerTagTotalReactiveEnergyDeliveredPerPhase(WirelessDeviceEntity, SensorEntity):
-    _attr_device_class = SensorDeviceClass.ENERGY
+    _attr_device_class = None
     _attr_native_unit_of_measurement = "VARh"
     _attr_state_class = SensorStateClass.TOTAL
 
@@ -588,7 +588,7 @@ class PowerTagTotalReactiveEnergyDeliveredPerPhase(WirelessDeviceEntity, SensorE
 
 
 class PowerTagPartialReactiveEnergyReceived(WirelessDeviceEntity, SensorEntity):
-    _attr_device_class = SensorDeviceClass.ENERGY
+    _attr_device_class = None
     _attr_native_unit_of_measurement = "VARh"
     _attr_state_class = SensorStateClass.TOTAL_INCREASING
 
@@ -610,7 +610,7 @@ class PowerTagPartialReactiveEnergyReceived(WirelessDeviceEntity, SensorEntity):
 
 
 class PowerTagTotalReactiveEnergyReceived(WirelessDeviceEntity, SensorEntity):
-    _attr_device_class = SensorDeviceClass.ENERGY
+    _attr_device_class = None
     _attr_native_unit_of_measurement = "VARh"
     _attr_state_class = SensorStateClass.TOTAL
 
@@ -635,7 +635,7 @@ class PowerTagTotalReactiveEnergyReceived(WirelessDeviceEntity, SensorEntity):
 
 
 class PowerTagPartialReactiveEnergyReceivedPerPhase(WirelessDeviceEntity, SensorEntity):
-    _attr_device_class = SensorDeviceClass.ENERGY
+    _attr_device_class = None
     _attr_native_unit_of_measurement = "VARh"
     _attr_state_class = SensorStateClass.TOTAL_INCREASING
 
@@ -661,7 +661,7 @@ class PowerTagPartialReactiveEnergyReceivedPerPhase(WirelessDeviceEntity, Sensor
 
 
 class PowerTagTotalReactiveEnergyReceivedPerPhase(WirelessDeviceEntity, SensorEntity):
-    _attr_device_class = SensorDeviceClass.ENERGY
+    _attr_device_class = None
     _attr_native_unit_of_measurement = "VARh"
     _attr_state_class = SensorStateClass.TOTAL
 
@@ -687,7 +687,7 @@ class PowerTagTotalReactiveEnergyReceivedPerPhase(WirelessDeviceEntity, SensorEn
 
 
 class PowerTagPartialApparentEnergy(WirelessDeviceEntity, SensorEntity):
-    _attr_device_class = SensorDeviceClass.ENERGY
+    _attr_device_class = None
     _attr_native_unit_of_measurement = "VAh"
     _attr_state_class = SensorStateClass.TOTAL_INCREASING
 
@@ -707,7 +707,7 @@ class PowerTagPartialApparentEnergy(WirelessDeviceEntity, SensorEntity):
 
 
 class PowerTagTotalApparentEnergy(WirelessDeviceEntity, SensorEntity):
-    _attr_device_class = SensorDeviceClass.ENERGY
+    _attr_device_class = None
     _attr_native_unit_of_measurement = "VAh"
     _attr_state_class = SensorStateClass.TOTAL
 
@@ -727,7 +727,7 @@ class PowerTagTotalApparentEnergy(WirelessDeviceEntity, SensorEntity):
 
 
 class PowerTagPartialApparentEnergyPerPhase(WirelessDeviceEntity, SensorEntity):
-    _attr_device_class = SensorDeviceClass.ENERGY
+    _attr_device_class = None
     _attr_native_unit_of_measurement = "VAh"
     _attr_state_class = SensorStateClass.TOTAL_INCREASING
 
@@ -748,7 +748,7 @@ class PowerTagPartialApparentEnergyPerPhase(WirelessDeviceEntity, SensorEntity):
 
 
 class PowerTagTotalApparentEnergyPerPhase(WirelessDeviceEntity, SensorEntity):
-    _attr_device_class = SensorDeviceClass.ENERGY
+    _attr_device_class = None
     _attr_native_unit_of_measurement = "VAh"
     _attr_state_class = SensorStateClass.TOTAL
 
