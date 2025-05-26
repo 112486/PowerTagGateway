@@ -126,12 +126,10 @@ class WirelessDeviceEntity(Entity):
         self._attr_device_info = tag_device
         self._attr_name = f"{tag_device['name']} {entity_name}"
 
-        serial = client.tag_serial_number(modbus_index)
+        serial = client.tag_serial_number(modbus_index) or f"slave-{modbus_index}"
+        gateway_host = client.host.replace('.', '-')
 
-        if unique_id_version == UniqueIdVersion.V1:
-            self._attr_unique_id = f"{TAG_DOMAIN}{serial}{entity_name}{modbus_index}"
-        else:
-            self._attr_unique_id = f"{TAG_DOMAIN}{serial}{entity_name}"
+        self._attr_unique_id = f"{TAG_DOMAIN}_{gateway_host}_{serial}_{entity_name}"
 
     @staticmethod
     def supports_feature_set(feature_class: FeatureClass) -> bool:
